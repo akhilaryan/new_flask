@@ -1,5 +1,7 @@
 import os
 from flask import Flask, render_template, send_from_directory
+from flask import url_for, request, session, redirect
+from flask_oauth import OAuth
 
 app = Flask(__name__)
 app.config.update(
@@ -23,9 +25,6 @@ if __name__ == "__main__":
 	app.run(host='0.0.0.0', port=port)
 
 # Facebook Authentication
-
-from flask import url_for, request, session, redirect
-from flask_oauth import OAuth
 
 FACEBOOK_APP_ID = '691001537654739'
 FACEBOOK_APP_SECRET = '5db41d64579acb1840d8c3f26476c9ca'
