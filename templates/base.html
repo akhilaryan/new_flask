@@ -27,9 +27,9 @@
 				{% block navbar_right %}
 				<ul class="nav navbar-nav pull-right">
 					{% if not session.logged_in %}
-						<li><a href="#">Login or SignUp</a></li>
+						<li><a href="/facebook_login">Login or SignUp</a></li>
 					{% else %}
-						<li><a href="#">Logout</a></li>
+						<li><a href="/logout">Logout</a></li>
 					{% endif %}
 				</ul>
 				{% endblock %}
