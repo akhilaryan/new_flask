@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<title> Home </title>
+
+{% if not session.logged_in %}
+	<p>You are not logged in</p>
+{% else %}
+	<p>You are Logged In</p>
+{% endif %}
+
+{% endblock %}
